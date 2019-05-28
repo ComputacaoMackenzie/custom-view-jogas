@@ -15,6 +15,7 @@
 		92949A602295DBF8008EE240 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92949A5F2295DBF8008EE240 /* ProgressCircleView.swift */; };
 		92949A622295E067008EE240 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92949A612295E067008EE240 /* ProgressBarView.swift */; };
 		92FB2169229A55C5000AF93E /* ProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB2168229A55C5000AF93E /* ProgressBarViewController.swift */; };
+		B69A63E7229DB608004A1EF1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A63E6229DB608004A1EF1 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		92949A5F2295DBF8008EE240 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		92949A612295E067008EE240 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		92FB2168229A55C5000AF93E /* ProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarViewController.swift; sourceTree = "<group>"; };
+		B69A63E6229DB608004A1EF1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		92949A4B2295DAF3008EE240 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				B69A63E5229DB5EF004A1EF1 /* Extensions */,
 				9270CB38229A5DBA000A31AB /* Controllers */,
 				92949A5E2295DB10008EE240 /* Views */,
 				92949A4C2295DAF3008EE240 /* AppDelegate.swift */,
@@ -87,6 +90,14 @@
 				92949A612295E067008EE240 /* ProgressBarView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B69A63E5229DB5EF004A1EF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B69A63E6229DB608004A1EF1 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				92FB2169229A55C5000AF93E /* ProgressBarViewController.swift in Sources */,
 				92949A602295DBF8008EE240 /* ProgressCircleView.swift in Sources */,
 				92949A4D2295DAF3008EE240 /* AppDelegate.swift in Sources */,
+				B69A63E7229DB608004A1EF1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

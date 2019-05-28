@@ -40,5 +40,24 @@ class ProgressBarViewController: UITableViewController {
     @IBAction func targetChange(_ sender: Any) {
         self.progressBarView?.targetValue = CGFloat(self.targetSlider.value)
     }
+    
+    @IBAction func colorChange(_ button: UIButton) {
+        let color = UIColor.random
+        button.backgroundColor = color
+        
+        switch button.tag {
+        case 0:
+            self.progressBarView?.lineColor = color
+            self.widthSlider.tintColor = color
+        case 1:
+            self.progressBarView?.progressColor = color
+            self.progressSlider.tintColor = color
+        case 2:
+            self.progressBarView?.targetColor = color
+            self.targetSlider.tintColor = color
+        default:
+            break
+        }
+    }
 }
 

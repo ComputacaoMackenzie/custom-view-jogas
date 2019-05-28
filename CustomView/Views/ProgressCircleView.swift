@@ -19,6 +19,7 @@ class ProgressCircleView: UIView {
     var progressValue:CGFloat = 0.0 {
         didSet{
             setNeedsDisplay()
+            progressLabel?.text = String(format: "Progress: %.2f%%", progressValue * 100)
         }
     }
     
@@ -27,6 +28,7 @@ class ProgressCircleView: UIView {
     var targetValue:CGFloat = 0.75 {
         didSet{
             setNeedsDisplay()
+            targetLabel?.text = String(format: "Target: %.2f%%", targetValue * 100)
         }
     }
     
@@ -38,13 +40,53 @@ class ProgressCircleView: UIView {
     }
     
     @IBInspectable
-    var circleColor:UIColor = UIColor.black
+    var circleColor:UIColor = UIColor.black {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
-    var progressColor:UIColor = UIColor.yellow
+    var progressColor:UIColor = UIColor.yellow {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
-    var targetColor:UIColor = UIColor.green
+    var targetColor:UIColor = UIColor.green {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
+    var targetLabel: UILabel!
+    var progressLabel: UILabel!
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        targetLabel = UILabel()
+        targetLabel.font = UIFont(name: "Avenir Next", size: 12)
+        targetLabel.frame.size = CGSize(width: 110, height: 80)
+        targetLabel.textAlignment = .center
+        targetLabel.center = CGPoint(x: self.center.x, y: self.center.y - 20)
+        targetLabel.isHidden = true
+        
+        progressLabel = UILabel()
+        progressLabel.font = UIFont(name: "Avenir Next", size: 12)
+        progressLabel.frame.size = CGSize(width: 110, height: 80)
+        progressLabel.textAlignment = .center
+        progressLabel.center = CGPoint(x: self.center.x, y: self.center.y)
+        progressLabel.isHidden = true
+        
+        self.addSubview(targetLabel)
+        self.addSubview(progressLabel)
+    }
     
     // Method that draw the circle, progress and target
     override func draw(_ rect: CGRect) {
@@ -94,5 +136,15 @@ class ProgressCircleView: UIView {
         context?.setStrokeColor(progressColor.cgColor)
         context?.addArc(center: centerPoint, radius: radius, startAngle: start, endAngle: progressEnd, clockwise: false)
         context?.strokePath()
+    }
+    
+    func hideLabels() {
+        progressLabel.isHidden = true
+        targetLabel.isHidden = true
+    }
+    
+    func showLabels() {
+        progressLabel.isHidden = false
+        targetLabel.isHidden = false
     }
 }
