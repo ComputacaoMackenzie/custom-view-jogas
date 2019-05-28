@@ -559,7 +559,7 @@
                                                     <rect key="frame" x="20" y="7" width="374" height="30"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bby-fy-DZf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="82" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99h-cZ-Cj3">
                                                                     <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -569,8 +569,8 @@
                                                                         <action selector="colorChange:" destination="ueR-Fi-SVc" eventType="touchUpInside" id="hD3-g4-WmB"/>
                                                                     </connections>
                                                                 </button>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O6-nT-K5j">
-                                                                    <rect key="frame" x="38" y="0.0" width="44" height="30"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O6-nT-K5j">
+                                                                    <rect key="frame" x="38" y="0.0" width="32" height="30"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -578,7 +578,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BHh-Cr-xre">
-                                                            <rect key="frame" x="131.5" y="0.0" width="106" height="30"/>
+                                                            <rect key="frame" x="125.5" y="0.0" width="106" height="30"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-p3-w6g">
                                                                     <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
