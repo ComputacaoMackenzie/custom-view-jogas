@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="5iR-vg-JBg" kind="relationship" relationship="viewControllers" id="dyi-67-Wfc"/>
                         <segue destination="ueR-Fi-SVc" kind="relationship" relationship="viewControllers" id="pG7-ed-g5D"/>
+                        <segue destination="AdD-vx-zpY" kind="relationship" relationship="viewControllers" id="dqh-Gs-isO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXk-wg-G35" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -402,6 +403,466 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3l-0n-i4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="848" y="-554"/>
+        </scene>
+        <!--Circle-->
+        <scene sceneID="et7-CK-06r">
+            <objects>
+                <tableViewController id="1VB-ED-eol" customClass="ProgressCircleViewController" customModule="CustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Hnf-Ux-mhh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="qkJ-4O-mR3">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Progress Circle" id="plv-QL-iUL"/>
+                            </items>
+                        </navigationBar>
+                        <sections>
+                            <tableViewSection id="gWa-9t-TaH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="xee-xA-3qC">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xee-xA-3qC" id="dYU-8f-4Yi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0p-F6-cBb" customClass="ProgressCircleView" customModule="CustomView" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="8" width="414" height="192"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                            <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                            <real key="value" value="0.25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                            <real key="value" value="0.75"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                            <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="H0p-F6-cBb" firstAttribute="leading" secondItem="dYU-8f-4Yi" secondAttribute="leading" id="2KK-Jn-KHr"/>
+                                                <constraint firstAttribute="bottom" secondItem="H0p-F6-cBb" secondAttribute="bottom" id="AVw-5p-O4M"/>
+                                                <constraint firstItem="H0p-F6-cBb" firstAttribute="top" secondItem="dYU-8f-4Yi" secondAttribute="top" constant="8" id="Vcv-nf-xwT"/>
+                                                <constraint firstAttribute="trailing" secondItem="H0p-F6-cBb" secondAttribute="trailing" id="weM-d9-PqH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0iA-fc-Bdu">
+                                        <rect key="frame" x="0.0" y="244" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0iA-fc-Bdu" id="P1a-Uk-L9S">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="75" translatesAutoresizingMaskIntoConstraints="NO" id="7ij-15-1Wa">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <connections>
+                                                        <action selector="widthChange:" destination="1VB-ED-eol" eventType="valueChanged" id="JLa-Vq-aRQ"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Width [0 - 75]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HqJ-g6-Tfl">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="OyF-FJ-qVM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7ij-15-1Wa" firstAttribute="leading" secondItem="HqJ-g6-Tfl" secondAttribute="trailing" constant="8" id="4Gl-u2-Z56"/>
+                                                <constraint firstItem="HqJ-g6-Tfl" firstAttribute="top" secondItem="P1a-Uk-L9S" secondAttribute="topMargin" id="Beh-rP-ir3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HqJ-g6-Tfl" secondAttribute="bottom" id="RnS-RE-04p"/>
+                                                <constraint firstItem="7ij-15-1Wa" firstAttribute="centerY" secondItem="P1a-Uk-L9S" secondAttribute="centerY" id="Urt-fu-6fG"/>
+                                                <constraint firstAttribute="trailing" secondItem="7ij-15-1Wa" secondAttribute="trailing" constant="20" id="Xqq-63-dpd"/>
+                                                <constraint firstItem="HqJ-g6-Tfl" firstAttribute="leading" secondItem="P1a-Uk-L9S" secondAttribute="leadingMargin" constant="8" id="d9e-lb-iLm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Progress" id="PbN-Vu-Z1R">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aCR-PJ-tSM">
+                                        <rect key="frame" x="0.0" y="344" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aCR-PJ-tSM" id="iY4-Ib-tOG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lFx-6V-woi">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <color key="tintColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="progessChange:" destination="1VB-ED-eol" eventType="valueChanged" id="mhA-IC-Zxn"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value [0 - 1]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wxp-g7-dbg">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="nhN-6b-mb1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lFx-6V-woi" firstAttribute="leading" secondItem="wxp-g7-dbg" secondAttribute="trailing" constant="8" id="Hhh-um-sfb"/>
+                                                <constraint firstItem="wxp-g7-dbg" firstAttribute="leading" secondItem="iY4-Ib-tOG" secondAttribute="leadingMargin" constant="8" id="HiU-i7-zaz"/>
+                                                <constraint firstItem="wxp-g7-dbg" firstAttribute="top" secondItem="iY4-Ib-tOG" secondAttribute="topMargin" id="fN9-t3-QgQ"/>
+                                                <constraint firstItem="lFx-6V-woi" firstAttribute="centerY" secondItem="iY4-Ib-tOG" secondAttribute="centerY" id="gvX-Nb-gKx"/>
+                                                <constraint firstAttribute="trailing" secondItem="lFx-6V-woi" secondAttribute="trailing" constant="20" id="n8E-nN-YXO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wxp-g7-dbg" secondAttribute="bottom" id="nrV-qT-njc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Target" id="EiW-xe-06c">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gmK-Y1-MEu">
+                                        <rect key="frame" x="0.0" y="444" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gmK-Y1-MEu" id="bVp-CL-Rft">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.75" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ujN-Xw-zGH">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="targetChange:" destination="1VB-ED-eol" eventType="valueChanged" id="XSt-7S-6of"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value [0 - 1]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fMS-y6-dZW">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="BC7-2G-rxV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ujN-Xw-zGH" secondAttribute="trailing" constant="20" id="A8S-pF-I2O"/>
+                                                <constraint firstItem="ujN-Xw-zGH" firstAttribute="centerY" secondItem="bVp-CL-Rft" secondAttribute="centerY" id="WnJ-Yf-zR1"/>
+                                                <constraint firstItem="fMS-y6-dZW" firstAttribute="top" secondItem="bVp-CL-Rft" secondAttribute="topMargin" id="meC-dV-cgx"/>
+                                                <constraint firstItem="ujN-Xw-zGH" firstAttribute="leading" secondItem="fMS-y6-dZW" secondAttribute="trailing" constant="8" id="msJ-Zg-dIf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fMS-y6-dZW" secondAttribute="bottom" id="t1d-mY-zXq"/>
+                                                <constraint firstItem="fMS-y6-dZW" firstAttribute="leading" secondItem="bVp-CL-Rft" secondAttribute="leadingMargin" constant="8" id="tEu-dC-rSL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="1VB-ED-eol" id="4iJ-R3-SFc"/>
+                            <outlet property="delegate" destination="1VB-ED-eol" id="8Ne-Pd-BbB"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Circle" image="cicle" selectedImage="cicleSelected" id="SaS-i9-1uQ"/>
+                    <connections>
+                        <outlet property="progressCircleView" destination="H0p-F6-cBb" id="ndG-vh-7gg"/>
+                        <outlet property="progressSlider" destination="lFx-6V-woi" id="9d5-U3-E6z"/>
+                        <outlet property="targetSlider" destination="ujN-Xw-zGH" id="rXp-fB-XWP"/>
+                        <outlet property="widthSlider" destination="7ij-15-1Wa" id="tGQ-x0-52E"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8b-Oe-qhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="143"/>
+        </scene>
+        <!--Progress Multi Circle View Controller-->
+        <scene sceneID="zOS-QZ-SXk">
+            <objects>
+                <tableViewController id="AdD-vx-zpY" customClass="ProgressMultiCircleViewController" customModule="CustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="pP3-1p-md8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="BM3-oP-E2r">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Progress Circle" id="bTs-Fi-O88"/>
+                            </items>
+                        </navigationBar>
+                        <sections>
+                            <tableViewSection id="NQP-Yq-nfN">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="Xiw-6P-UvB">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xiw-6P-UvB" id="L7C-7O-N4R">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7X-o5-f6F" customClass="ProgressMultiCircleView" customModule="CustomView" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="8" width="414" height="192"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oCo-tD-iWc" customClass="ProgressMultiCircleView" customModule="CustomView" customModuleProvider="target">
+                                                            <rect key="frame" x="74" y="17" width="269" height="155"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXg-9t-Whl" customClass="ProgressMultiCircleView" customModule="CustomView" customModuleProvider="target">
+                                                                    <rect key="frame" x="19" y="17" width="232" height="117"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQu-3R-EMQ" customClass="ProgressMultiCircleView" customModule="CustomView" customModuleProvider="target">
+                                                                            <rect key="frame" x="54" y="17" width="125" height="82"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                                                    <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                                                    <real key="value" value="0.25"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                                                    <real key="value" value="0.75"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                                                    <real key="value" value="10"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                                                    <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                                                    <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                                            <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                                            <real key="value" value="0.25"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                                            <real key="value" value="0.75"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                                            <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                                    <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                                    <real key="value" value="0.25"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                                    <real key="value" value="0.75"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                                    <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                                    <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                            <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                            <real key="value" value="0.25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                            <real key="value" value="0.75"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                            <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Y7X-o5-f6F" firstAttribute="leading" secondItem="L7C-7O-N4R" secondAttribute="leading" id="JAG-sl-fgm"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y7X-o5-f6F" secondAttribute="trailing" id="abC-xT-QWe"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y7X-o5-f6F" secondAttribute="bottom" id="n8M-xD-kwN"/>
+                                                <constraint firstItem="Y7X-o5-f6F" firstAttribute="top" secondItem="L7C-7O-N4R" secondAttribute="top" constant="8" id="oPd-Jw-fdb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rEp-Mh-Hp9">
+                                        <rect key="frame" x="0.0" y="244" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rEp-Mh-Hp9" id="u5I-z0-C13">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="75" translatesAutoresizingMaskIntoConstraints="NO" id="8Iq-Ah-4cS">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <connections>
+                                                        <action selector="widthChange:" destination="AdD-vx-zpY" eventType="valueChanged" id="scd-gD-fyG"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Width [0 - 75]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="j9J-SQ-gtk">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Mjh-7L-rUK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8Iq-Ah-4cS" firstAttribute="centerY" secondItem="u5I-z0-C13" secondAttribute="centerY" id="6uW-5B-uXE"/>
+                                                <constraint firstItem="j9J-SQ-gtk" firstAttribute="leading" secondItem="u5I-z0-C13" secondAttribute="leadingMargin" constant="8" id="9mB-9O-M07"/>
+                                                <constraint firstItem="j9J-SQ-gtk" firstAttribute="top" secondItem="u5I-z0-C13" secondAttribute="topMargin" id="Aur-an-ctR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="j9J-SQ-gtk" secondAttribute="bottom" id="K9C-0Y-iwu"/>
+                                                <constraint firstItem="8Iq-Ah-4cS" firstAttribute="leading" secondItem="j9J-SQ-gtk" secondAttribute="trailing" constant="8" id="d07-Sp-W1d"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Iq-Ah-4cS" secondAttribute="trailing" constant="20" id="vjZ-1R-smY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Progress" id="fZT-UJ-QU9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ggc-7x-ceM">
+                                        <rect key="frame" x="0.0" y="344" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ggc-7x-ceM" id="g7R-s1-I4z">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YCS-jp-Sta">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <color key="tintColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="progessChange:" destination="AdD-vx-zpY" eventType="valueChanged" id="CHz-ja-ERW"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value [0 - 1]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eoE-Gm-q2v">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="r9s-p0-EZo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="YCS-jp-Sta" secondAttribute="trailing" constant="20" id="VeW-t4-S8h"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="eoE-Gm-q2v" secondAttribute="bottom" id="a4l-Zm-C1k"/>
+                                                <constraint firstItem="eoE-Gm-q2v" firstAttribute="leading" secondItem="g7R-s1-I4z" secondAttribute="leadingMargin" constant="8" id="aIu-XX-azP"/>
+                                                <constraint firstItem="YCS-jp-Sta" firstAttribute="centerY" secondItem="g7R-s1-I4z" secondAttribute="centerY" id="kjf-xM-CrZ"/>
+                                                <constraint firstItem="eoE-Gm-q2v" firstAttribute="top" secondItem="g7R-s1-I4z" secondAttribute="topMargin" id="oAR-V6-cWt"/>
+                                                <constraint firstItem="YCS-jp-Sta" firstAttribute="leading" secondItem="eoE-Gm-q2v" secondAttribute="trailing" constant="8" id="rhb-3Y-Iby"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Target" id="SCH-TT-auK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="j8o-Uv-gma">
+                                        <rect key="frame" x="0.0" y="444" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j8o-Uv-gma" id="uat-qZ-xCz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.75" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IOl-wb-wrD">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="targetChange:" destination="AdD-vx-zpY" eventType="valueChanged" id="IaQ-Rc-uux"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value [0 - 1]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ORH-hE-3L4">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="P8h-VG-QX1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="IOl-wb-wrD" secondAttribute="trailing" constant="20" id="0dR-cl-emg"/>
+                                                <constraint firstItem="ORH-hE-3L4" firstAttribute="leading" secondItem="uat-qZ-xCz" secondAttribute="leadingMargin" constant="8" id="Pdc-1O-peY"/>
+                                                <constraint firstItem="IOl-wb-wrD" firstAttribute="leading" secondItem="ORH-hE-3L4" secondAttribute="trailing" constant="8" id="Uhc-ig-5Qb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ORH-hE-3L4" secondAttribute="bottom" id="ava-EM-qRQ"/>
+                                                <constraint firstItem="ORH-hE-3L4" firstAttribute="top" secondItem="uat-qZ-xCz" secondAttribute="topMargin" id="dcW-v9-sZS"/>
+                                                <constraint firstItem="IOl-wb-wrD" firstAttribute="centerY" secondItem="uat-qZ-xCz" secondAttribute="centerY" id="mAz-gH-fGt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="AdD-vx-zpY" id="fdY-zk-X2u"/>
+                            <outlet property="delegate" destination="AdD-vx-zpY" id="jCL-pQ-piT"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" selectedImage="cicleSelected" systemItem="more" id="4N1-wN-U5d"/>
+                    <connections>
+                        <outlet property="ProgressMultiCircleView" destination="Y7X-o5-f6F" id="iCN-2I-cdl"/>
+                        <outlet property="ProgressMultiCircleView2" destination="oCo-tD-iWc" id="Pjc-nH-BLP"/>
+                        <outlet property="ProgressMultiCircleView3" destination="PXg-9t-Whl" id="Fy1-we-BRI"/>
+                        <outlet property="ProgressMultiCircleView4" destination="SQu-3R-EMQ" id="YCz-K1-MHK"/>
+                        <outlet property="progressSlider" destination="YCS-jp-Sta" id="Gqc-NB-uq3"/>
+                        <outlet property="targetSlider" destination="IOl-wb-wrD" id="NwQ-SH-ep4"/>
+                        <outlet property="widthSlider" destination="8Iq-Ah-4cS" id="hsX-sn-Ybe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyu-2p-w6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828.98550724637687" y="1001.7857142857142"/>
         </scene>
     </scenes>
     <resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomView/Views/ProgressCircleView.swift"
+            timestampString = "580759364.822729"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "progressValue"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomView.ProgressCircleView.progressValue.modify : CoreGraphics.CGFloat"
+                  moduleName = "CustomView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maatheusgois/repos/customView/CustomView/Views/ProgressCircleView.swift"
+                  timestampString = "580758149.1638319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomView.ProgressCircleView.progressValue.modify : CoreGraphics.CGFloat with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CustomView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maatheusgois/repos/customView/CustomView/Views/ProgressCircleView.swift"
+                  timestampString = "580758149.16549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomView.ProgressCircleView.init(frame: __C.CGRect) -&gt; CustomView.ProgressCircleView"
+                  moduleName = "CustomView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maatheusgois/repos/customView/CustomView/Views/ProgressCircleView.swift"
+                  timestampString = "580758149.167032"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomView.ProgressCircleView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CustomView.ProgressCircleView&gt;"
+                  moduleName = "CustomView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maatheusgois/repos/customView/CustomView/Views/ProgressCircleView.swift"
+                  timestampString = "580758149.168551"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "137">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

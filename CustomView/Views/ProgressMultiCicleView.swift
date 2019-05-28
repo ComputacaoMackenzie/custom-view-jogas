@@ -1,18 +1,16 @@
 //
-//  ProgressCircle.swift
-//  CustomViewComponent
+//  ProgressMultiCicleView.swift
+//  CustomView
 //
-//  Modified by Joaquim Pessoa Filho on 22/05/19.
+//  Created by Matheus Gois on 28/05/19.
 //  Copyright © 2019 Joaquim Pessoa Filho. All rights reserved.
 //
-//  Created by Joaquim Pessôa Filho on 9/5/15.
-//  Copyright (c) 2015 Mackenzie. All rights reserved.
-//
+
 
 import UIKit
 
 @IBDesignable
-class ProgressCircleView: UIView {
+class ProgressMultiCircleView: UIView {
     
     @IBInspectable
     // The value of current progress between 0.0 and 1.0
@@ -100,3 +98,4 @@ class ProgressCircleView: UIView {
         context?.strokePath()
     }
 }
+
