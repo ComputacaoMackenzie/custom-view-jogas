@@ -495,6 +495,114 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Color" id="0bl-5p-KRg">
+                                <cells>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tVd-vw-7kj">
+                                        <rect key="frame" x="0.0" y="544" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tVd-vw-7kj" id="KGg-tG-K6d">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b9Y-Dg-nQN">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="circleColor:" destination="ueR-Fi-SVc" eventType="valueChanged" id="1cX-8w-Lxx"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="q1G-5l-Usi">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="pIT-76-8EW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b9Y-Dg-nQN" firstAttribute="centerY" secondItem="KGg-tG-K6d" secondAttribute="centerY" id="Aki-ua-WJT"/>
+                                                <constraint firstItem="q1G-5l-Usi" firstAttribute="top" secondItem="KGg-tG-K6d" secondAttribute="topMargin" id="Fok-IY-PES"/>
+                                                <constraint firstItem="q1G-5l-Usi" firstAttribute="leading" secondItem="KGg-tG-K6d" secondAttribute="leadingMargin" constant="8" id="Ku7-9e-0pA"/>
+                                                <constraint firstAttribute="trailing" secondItem="b9Y-Dg-nQN" secondAttribute="trailing" constant="20" id="SkZ-zZ-pHe"/>
+                                                <constraint firstItem="b9Y-Dg-nQN" firstAttribute="leading" secondItem="q1G-5l-Usi" secondAttribute="trailing" constant="8" id="lZP-or-xp8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="q1G-5l-Usi" secondAttribute="bottom" id="wRH-Qv-6ir"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FHd-Lz-SIL">
+                                        <rect key="frame" x="0.0" y="588" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FHd-Lz-SIL" id="Lbx-dA-hTw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9If-wC-eSO">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="progressColor:" destination="5iR-vg-JBg" eventType="valueChanged" id="Hur-tV-9Nm"/>
+                                                        <action selector="progressColor:" destination="ueR-Fi-SVc" eventType="valueChanged" id="j7d-WV-qvk"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VhJ-KL-AxN">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="JNH-ow-84a"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9If-wC-eSO" firstAttribute="centerY" secondItem="Lbx-dA-hTw" secondAttribute="centerY" id="3Zi-gt-dcw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VhJ-KL-AxN" secondAttribute="bottom" id="3hd-Je-dUS"/>
+                                                <constraint firstItem="9If-wC-eSO" firstAttribute="leading" secondItem="VhJ-KL-AxN" secondAttribute="trailing" constant="8" id="CS1-7Q-inA"/>
+                                                <constraint firstAttribute="trailing" secondItem="9If-wC-eSO" secondAttribute="trailing" constant="20" id="Pqr-BH-AgM"/>
+                                                <constraint firstItem="VhJ-KL-AxN" firstAttribute="top" secondItem="Lbx-dA-hTw" secondAttribute="topMargin" id="edf-C4-ogi"/>
+                                                <constraint firstItem="VhJ-KL-AxN" firstAttribute="leading" secondItem="Lbx-dA-hTw" secondAttribute="leadingMargin" constant="8" id="hO6-VD-sGW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eEF-Dz-VyX">
+                                        <rect key="frame" x="0.0" y="632" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eEF-Dz-VyX" id="8lM-OZ-UXS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="64D-6M-dYx">
+                                                    <rect key="frame" x="154" y="7" width="242" height="31"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="targetColor:" destination="ueR-Fi-SVc" eventType="valueChanged" id="naG-nW-cuj"/>
+                                                        <action selector="targetColor:" destination="5iR-vg-JBg" eventType="valueChanged" id="yym-Tf-HIo"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e3A-T2-7Vn">
+                                                    <rect key="frame" x="28" y="11" width="120" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="EqV-aj-qUD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e3A-T2-7Vn" firstAttribute="leading" secondItem="8lM-OZ-UXS" secondAttribute="leadingMargin" constant="8" id="D9e-7m-Cpx"/>
+                                                <constraint firstItem="64D-6M-dYx" firstAttribute="leading" secondItem="e3A-T2-7Vn" secondAttribute="trailing" constant="8" id="NS6-za-2Zu"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="e3A-T2-7Vn" secondAttribute="bottom" id="Sjl-Cj-cDQ"/>
+                                                <constraint firstItem="e3A-T2-7Vn" firstAttribute="top" secondItem="8lM-OZ-UXS" secondAttribute="topMargin" id="ZxX-7y-3Cn"/>
+                                                <constraint firstAttribute="trailing" secondItem="64D-6M-dYx" secondAttribute="trailing" constant="20" id="bQo-Up-QI8"/>
+                                                <constraint firstItem="64D-6M-dYx" firstAttribute="centerY" secondItem="8lM-OZ-UXS" secondAttribute="centerY" id="hYD-lq-IOa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="ueR-Fi-SVc" id="iow-xQ-SAU"/>
