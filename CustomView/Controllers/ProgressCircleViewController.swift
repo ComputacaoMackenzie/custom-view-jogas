@@ -75,13 +75,13 @@ class ProgressCircleViewController: UITableViewController {
                 self.widthSlider.tintColor = color
             case 1:
                 biggestProgressCircleView?.progressColor = color
-                mediumProgressCircleView?.circleColor = color
-                smallerProgressCircleView?.circleColor = color
+                mediumProgressCircleView?.progressColor = color
+                smallerProgressCircleView?.progressColor = color
                 self.progressSlider.tintColor = color
             case 2:
                 biggestProgressCircleView?.targetColor = color
-                mediumProgressCircleView?.circleColor = color
-                smallerProgressCircleView?.circleColor = color
+                mediumProgressCircleView?.targetColor = color
+                smallerProgressCircleView?.targetColor = color
                 self.targetSlider.tintColor = color
             default:
                 break
