@@ -20,6 +20,9 @@ class ProgressMultiCircleViewController: UITableViewController {
     @IBOutlet weak var progressSlider: UISlider!
     @IBOutlet weak var targetSlider: UISlider!
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,5 +72,9 @@ class ProgressMultiCircleViewController: UITableViewController {
         self.ProgressMultiCircleView3?.targetValue = CGFloat(self.targetSlider.value)
         self.ProgressMultiCircleView4?.targetValue = CGFloat(self.targetSlider.value)
     }
+   
+    
+    
+    
     
 }
