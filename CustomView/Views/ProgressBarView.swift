@@ -10,6 +10,8 @@ import UIKit
 
 @IBDesignable
 class ProgressBarView: UIView {
+    
+    // Line values
     @IBInspectable
     var lineWidth:CGFloat = 10.0 {
         didSet{
@@ -31,6 +33,7 @@ class ProgressBarView: UIView {
         }
     }
     
+    // Colors
     @IBInspectable
     var lineColor:UIColor = UIColor.black
     @IBInspectable

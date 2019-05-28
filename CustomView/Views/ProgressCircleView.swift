@@ -14,6 +14,15 @@ import UIKit
 @IBDesignable
 class ProgressCircleView: UIView {
     
+    // Line Values
+    
+    @IBInspectable
+    var circleWidth:CGFloat = 10.0 {
+        didSet{
+            setNeedsDisplay()
+        }
+    }
+    
     @IBInspectable
     // The value of current progress between 0.0 and 1.0
     var progressValue:CGFloat = 0.0 {
@@ -30,13 +39,7 @@ class ProgressCircleView: UIView {
         }
     }
     
-    @IBInspectable
-    var circleWidth:CGFloat = 10.0 {
-        didSet{
-            setNeedsDisplay()
-        }
-    }
-    
+    // Colors
     @IBInspectable
     var circleColor:UIColor = UIColor.black
     
