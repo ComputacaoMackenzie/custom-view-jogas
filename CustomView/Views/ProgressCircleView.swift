@@ -13,6 +13,7 @@ import UIKit
 
 @IBDesignable
 class ProgressCircleView: UIView {
+
     
     @IBInspectable
     // The value of current progress between 0.0 and 1.0
@@ -31,7 +32,7 @@ class ProgressCircleView: UIView {
     }
     
     @IBInspectable
-    var circleWidth:CGFloat = 10.0 {
+    var circleWidth:CGFloat = 5.0 {
         didSet{
             setNeedsDisplay()
         }
@@ -41,10 +42,10 @@ class ProgressCircleView: UIView {
     var circleColor:UIColor = UIColor.black
     
     @IBInspectable
-    var progressColor:UIColor = UIColor.yellow
+    var progressColor:UIColor = UIColor.yellow   //!!!!!!!!
     
     @IBInspectable
-    var targetColor:UIColor = UIColor.green
+    var targetColor:UIColor = UIColor.green      //!!!!!!
     
     // Method that draw the circle, progress and target
     override func draw(_ rect: CGRect) {
