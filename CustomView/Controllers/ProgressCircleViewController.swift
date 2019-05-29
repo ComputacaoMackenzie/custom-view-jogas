@@ -19,6 +19,9 @@ class ProgressCircleViewController: UITableViewController {
     @IBOutlet weak var progressColor: UISlider!
     @IBOutlet weak var targetColor: UISlider!
 
+    
+    @IBOutlet weak var pocent: UILabel!
+    
     var firstColor = #colorLiteral(red: 0.992390573, green: 0.5031119585, blue: 1, alpha: 0.6875550176)
     var secondColor = #colorLiteral(red: 0.6687839031, green: 0.4701688886, blue: 1, alpha: 0.6875550176)
     var thirdColor = #colorLiteral(red: 1, green: 0.4376526475, blue: 0.6227459311, alpha: 0.6875550176)
@@ -34,6 +37,7 @@ class ProgressCircleViewController: UITableViewController {
         self.progressCircleView?.progressColor = secondColor
         self.progressCircleView?.targetColor = thirdColor
         
+        self.pocent?.text = String(format: "%.2f", CGFloat(self.progressSlider.value) * 100) + "%"
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -48,6 +52,9 @@ class ProgressCircleViewController: UITableViewController {
     
     @IBAction func progessChange(_ sender: Any) {
         self.progressCircleView?.progressValue = CGFloat(self.progressSlider.value)
+        self.pocent?.text = String(format: "%.2f", CGFloat(self.progressSlider.value) * 100) + "%"
+        
+
     }
     
     @IBAction func targetChange(_ sender: Any) {
@@ -78,6 +85,7 @@ class ProgressCircleViewController: UITableViewController {
             progressCircleView?.progressColor = thirdColor
             sender.maximumTrackTintColor = thirdColor
         }
+        self.pocent?.text = "\(CGFloat(self.progressSlider.value)*100)%"
         
     }
     @IBAction func targetColor(_ sender: UISlider) {

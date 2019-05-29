@@ -56,6 +56,15 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0j-bi-2ZE" customClass="ProgressCircleView" customModule="CustomView" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="8" width="414" height="192"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9z-kg-BV9">
+                                                            <rect key="frame" x="148" y="86" width="117" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
@@ -313,6 +322,7 @@
                     <tabBarItem key="tabBarItem" title="Circle" image="cicle" selectedImage="cicleSelected" id="gtV-i6-qP3"/>
                     <connections>
                         <outlet property="circleColor" destination="ccj-Jf-TyV" id="htB-Bh-QSc"/>
+                        <outlet property="pocent" destination="U9z-kg-BV9" id="HMi-BY-5u4"/>
                         <outlet property="progressCircleView" destination="Y0j-bi-2ZE" id="RfR-EA-jIc"/>
                         <outlet property="progressColor" destination="Min-Jg-0DX" id="NWb-hG-OdD"/>
                         <outlet property="progressSlider" destination="LnG-Y8-C5N" id="F4D-Sf-vHY"/>
@@ -323,7 +333,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7H-Sn-JKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="143"/>
+            <point key="canvasLocation" x="847.82608695652175" y="142.63392857142856"/>
         </scene>
         <!--Bar-->
         <scene sceneID="5Hn-u6-Q9Z">
